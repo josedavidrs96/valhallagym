@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Valhalla Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>VALHALLA GYM</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="trainers.html">Entrenadores</a></li>
+                    <li><a href="contact.html" class="active">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <p>Estamos aquí para ayudarte a comenzar tu transformación</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-section">
+                        <h3>¡Únete a Valhalla Gym!</h3>
+                        <p class="form-intro">Completa el formulario y nos pondremos en contacto contigo para diseñar tu plan de entrenamiento personalizado</p>
+
+                        <form class="contact-form" id="contactForm" action="https://formsubmit.co/josedavidrs96@gmail.com" method="POST">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="Nuevo contacto desde Valhalla Gym">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" name="_honey" style="display:none">
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nombre *</label>
+                                    <input type="text" id="name" name="Nombre" placeholder="Tu nombre" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="surname">Apellidos *</label>
+                                    <input type="text" id="surname" name="Apellidos" placeholder="Tus apellidos" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="Email" placeholder="tu@email.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Teléfono de contacto *</label>
+                                    <input type="tel" id="phone" name="Teléfono" placeholder="+34 600 000 000" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="about">Cuéntanos un poco de ti *</label>
+                                <textarea id="about" name="Información_Personal" rows="6" placeholder="Por favor, indícanos:&#10;- Lesiones previas o condiciones médicas que debamos conocer&#10;- Tarifa que estarías interesado/a (Básico €29.99, Premium €49.99, Elite €79.99)&#10;- Tus objetivos principales (pérdida de peso, ganancia muscular, mejorar resistencia, etc.)" required></textarea>
+                                <small class="form-help">Esta información nos ayudará a ofrecerte el mejor plan personalizado</small>
+                            </div>
+
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary">
+                                    <span class="btn-text">Enviar Solicitud</span>
+                                    <span class="btn-icon">→</span>
+                                </button>
+                                <p class="form-privacy">Al enviar este formulario aceptas nuestra política de privacidad</p>
+                            </div>
+                        </form>
+
+                        <div id="formMessage" class="form-message"></div>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <h3>Información de Contacto</h3>
+
+                        <div class="info-card">
+                            <h4>📍 Dirección</h4>
+                            <p>Calle Almazara, 17<br>
+                            41907 Valencina de la Concepción<br>
+                            Sevilla, España</p>
+                        </div>
+
+                        <div class="info-card">
+                            <h4>📞 Teléfono</h4>
+                            <p><a href="tel:+34912345678">+34 91 234 5678</a></p>
+                        </div>
+
+                        <div class="info-card">
+                            <h4>✉️ Email</h4>
+                            <p><a href="mailto:info@valhallagym.com">info@valhallagym.com</a></p>
+                        </div>
+
+                        <div class="info-card">
+                            <h4>⏰ Horario</h4>
+                            <p>Lunes - Viernes: 6:00 AM - 11:00 PM<br>
+                            Sábados: 8:00 AM - 10:00 PM<br>
+                            Domingos: 8:00 AM - 8:00 PM</p>
+                        </div>
+
+                        <div class="social-links">
+                            <h4>Síguenos</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">Facebook</a>
+                                <a href="#" class="social-icon">Instagram</a>
+                                <a href="#" class="social-icon">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h3>Encuéntranos</h3>
+                <p class="map-description">Visítanos en nuestra ubicación en Valencina de la Concepción, Sevilla</p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1745519000000!6m8!1m7!1swvov-Ih7WbDIbXrwNYd8fQ!2m2!1d37.16581669999999!2d-5.926803399999999!3f131.35!4f-2.24!5f0.7525849677101909"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="membership-info">
+            <div class="container">
+                <h3>Planes de Membresía</h3>
+                <div class="membership-grid">
+                    <div class="membership-card">
+                        <h4>Básico</h4>
+                        <p class="price">€29.99/mes</p>
+                        <ul>
+                            <li>Acceso al gimnasio</li>
+                            <li>Vestuarios y duchas</li>
+                            <li>App de entrenamiento</li>
+                        </ul>
+                    </div>
+
+                    <div class="membership-card featured">
+                        <h4>Premium</h4>
+                        <p class="price">€49.99/mes</p>
+                        <ul>
+                            <li>Todo del plan Básico</li>
+                            <li>Clases grupales ilimitadas</li>
+                            <li>1 sesión de entrenamiento personal/mes</li>
+                            <li>Acceso a sauna</li>
+                        </ul>
+                    </div>
+
+                    <div class="membership-card">
+                        <h4>Elite</h4>
+                        <p class="price">€79.99/mes</p>
+                        <ul>
+                            <li>Todo del plan Premium</li>
+                            <li>4 sesiones de entrenamiento personal/mes</li>
+                            <li>Plan nutricional personalizado</li>
+                            <li>Masaje deportivo mensual</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Valhalla Gym. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
