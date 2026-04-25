@@ -54,6 +54,12 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.logo:hover {
+    opacity: 0.9;
 }
 
 .logo-img {
@@ -187,8 +193,8 @@ body {
 
 /* CTA Section */
 .cta {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background: var(--gradient-primary);
+    color: var(--white);
     padding: 4rem 0;
     text-align: center;
 }
@@ -196,11 +202,13 @@ body {
 .cta h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: var(--white);
 }
 
 .cta p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    color: var(--light-blue);
 }
 
 /* Page Header */
