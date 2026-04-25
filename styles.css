@@ -50,11 +50,23 @@ body {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
 .logo h1 {
-    color: var(--primary-color);
+    color: var(--white);
     font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 2px;
+    margin: 0;
 }
 
 .nav-menu {
@@ -89,12 +101,13 @@ body {
 .hero-content h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--white);
 }
 
 .hero-content p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    color: var(--light-blue);
 }
 
 /* Botones */
@@ -201,11 +214,12 @@ body {
 .page-header h2 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: var(--white);
 }
 
 .page-header p {
     font-size: 1.2rem;
+    color: var(--light-blue);
 }
 
 /* Classes Section */
@@ -437,6 +451,79 @@ body {
 .social-icon:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+/* Blog Section */
+.blog-content {
+    padding: 5rem 0;
+    background-color: var(--light-bg);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2.5rem;
+}
+
+.blog-post {
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--shadow-dark);
+    transition: var(--transition);
+}
+
+.blog-post:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px var(--shadow);
+}
+
+.post-image {
+    height: 200px;
+    background: var(--gradient-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-post-image {
+    font-size: 4rem;
+}
+
+.post-content {
+    padding: 2rem;
+}
+
+.post-date {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.post-content h3 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.post-content p {
+    color: var(--text-color);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.read-more {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.read-more:hover {
+    color: var(--accent-color);
+    transform: translateX(5px);
+    display: inline-block;
 }
 
 /* Map Section */
@@ -739,7 +826,8 @@ footer {
     .features-grid,
     .classes-grid,
     .trainers-grid,
-    .membership-grid {
+    .membership-grid,
+    .blog-grid {
         grid-template-columns: 1fr;
     }
 
